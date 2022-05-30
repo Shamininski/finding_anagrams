@@ -6,6 +6,13 @@
 
 def find_anagram(word, anagram):
     # [assignment] Add your code here
+    if (sorted(word.lower()) == sorted(anagram.lower())):
+        print(True)
+        return True
+    else:
+        print(False) 
+        return False
 
-    return True
-
+### Testing out the code.
+find_anagram('Noel', 'Leon') 
+find_anagram('word', 'words')
